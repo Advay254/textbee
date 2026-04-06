@@ -77,6 +77,13 @@ async function bootstrap() {
   )
   app.useBodyParser('json', { limit: '2mb' });
   app.enableCors()
+
+  // Lightweight health check endpoint for uptime monitors
+  const httpAdapter = app.getHttpAdapter()
+  httpAdapter.get('/health', (req: any, res: any) => {
+    res.status(200).json({ status: 'ok' })
+  })
+
   await app.listen(PORT, '0.0.0.0')
 }
 bootstrap()
