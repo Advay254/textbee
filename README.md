@@ -1,4 +1,4 @@
-# textbee.dev - android sms gateway
+# textbee.dev - android sms gateway 
 
 textbee.dev is an open-source SMS gateway that enables users to send and receive SMS messages via a web dashboard or a REST API. Perfect for businesses, developers, and hobbyists who need a reliable and cost-effective way to automate SMS messaging.
 
